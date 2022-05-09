@@ -159,42 +159,43 @@ def main():
         personality_code += pc_code[0]
         key_c += pc_code[1]
         #st.text(personality_code)
-        #st.text(key_c)
-        my_bar.progress(key_c)
+        st.text(key_c)
+        my_bar.progress(15)
         pc_code = questions_print(questions2, key_c, 'S', 'N', 0, 0)
         if pc_code != None:
             #personality_code += pc_code[0]
             key_c += pc_code[1]
             #st.text(personality_code)
-            #st.text(key_c)
-            my_bar.progress(key_c)
+            st.text(key_c)
+            my_bar.progress(30)
             pc_code = questions_print(questions3, key_c, 'S', 'N', pc_code[2], pc_code[3])
             if pc_code != None:
                 personality_code += pc_code[0]
                 key_c += pc_code[1]
                 #st.text(personality_code)
-                #st.text(key_c)
-                my_bar.progress(key_c)
+                st.text(key_c)
+                my_bar.progress(45)
                 pc_code = questions_print(questions4, key_c, 'T', 'F', 0, 0)
                 if pc_code != None:
                     #personality_code += pc_code[0]
                     key_c += pc_code[1]
                     #st.text(personality_code)
-                    #st.text(key_c)
-                    my_bar.progress(key_c)
+                    st.text(key_c)
+                    my_bar.progress(60)
                     pc_code = questions_print(questions5, key_c, 'T', 'F', pc_code[2], pc_code[3])
                     if pc_code != None:
                         personality_code += pc_code[0]
                         key_c += pc_code[1]
                         #st.text(personality_code)
-                        my_bar.progress(key_c)
+                        my_bar.progress(75)
+                        st.text(key_c)
                         pc_code = questions_print(questions6, key_c, 'J', 'P', 0, 0)
                         if pc_code != None:
                             personality_code += pc_code[0]
                             key_c += pc_code[1]
                             #st.text(personality_code)
-                            #st.text(key_c)
-                            my_bar.progress(key_c)
+                            st.text(key_c)
+                            my_bar.progress(90)
                             pc_code = questions_print(questions7, key_c, 'J', 'P', pc_code[2], pc_code[3])
                             if pc_code != None:
                                 personality_code += pc_code[0]
@@ -208,7 +209,7 @@ def main():
                                 st.balloons()
                                 time.sleep(2)
                                 placeholder6.empty()
-        if personality_code != "":
+        if personality_code != "" && :
             st.header("Your MBTI is " + personality_code)
             if personality_code == "INFP":
                 st.subheader(" The Mediator ")
