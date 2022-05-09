@@ -211,7 +211,7 @@ def main():
                                 time.sleep(2)
                                 placeholder6.empty()
                                 test_complete = True
-        if personality_code != "" and test_complete = True:
+        if personality_code != "" and test_complete == True:
             st.header("Your MBTI is " + personality_code)
             if personality_code == "INFP":
                 st.subheader(" The Mediator ")
