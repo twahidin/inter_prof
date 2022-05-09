@@ -142,6 +142,7 @@ def main():
     personality_code  = ""
     pc_code = ""
     key_c = 0
+    test_complete = False
     #key_counter = 0
     #if class code is valid, the rest of the input functions will appear
     #st.header("Please key in the necessary details")
@@ -209,7 +210,8 @@ def main():
                                 st.balloons()
                                 time.sleep(2)
                                 placeholder6.empty()
-        if personality_code != "" && :
+                                test_complete = True
+        if personality_code != "" and test_complete = True:
             st.header("Your MBTI is " + personality_code)
             if personality_code == "INFP":
                 st.subheader(" The Mediator ")
