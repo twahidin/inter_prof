@@ -5,87 +5,55 @@ import time
 
 now = datetime.now()
 
-questions1 = [("At a party do you:", "interact with many, including strangers", "interact with a few, known  to you"),
-    ("At parties do you:", "Stay late, with increasing energy", "Leave early, with decreasing energy"),
-    ("In your social groups do you:", "Keep abreast of others happenings", "Get behind on the news"),
-    ("In phoning do you:", "Rarely question that it will all be said", "Rehearse what you’ll say"),
-    ("In company do you:", "Start conversations", "Wait to be approached"),
+questions1 = [("In your social groups do you:", "Keep abreast of all happenings", "Be behind on the latest news"),
+    ("With new company do you:", "Start conversations", "Wait to be approached"),
     ("Does new and non-routine interaction with others:", "Stimulate and energize you", "Tax your reserves"),
     ("Do you prefer:", "Many friends with brief contact", "A few friends with longer contact"),
     ("Do you:", "Speak easily and at length with strangers", "Find little to say to strangers"),
-    ("When the phone rings do you:", "Quickly get to it first", "Hope someone else will answer"),
     ("Are you more inclined to be:", "Easy to approach", "Somewhat reserved")]
 
 
+
 questions2 = [("Are you more:", "Realistic", "Speculative"),
-    ("Are you attracted to:", "Sensible people", "Imaginative people "),
     ("In doing ordinary things are you more likely to:", "Do it the usual way", "Do it your own way"),
     ("Facts:", "Speak for themselves", "Usually require interpretation"),
-    ("Common sense is:", "Rarely questionable", "Frequently questionable"),
-    ("Are you more frequently:", "A practical sort of person", "An abstract sort of person "),
     ("Do you go more by:", "Facts", "Principles"),
-    ("Are you more likely to trust your:", "Experience", "Hunch"),
-    ("Do you prize more in yourself:", "Good sense of reality", "Good imagination "),
-    ("In writings do you prefer:", "The more literal", "The more figurative"),]
+    ("Are you more likely to trust your:", "Experience", "Hunch")]
+
 #Not in the MBTI questions list
-questions3 = [("Is it worse to:", "Have your 'head in the clouds'", "Be 'in a rut'"),
+questions3 =  [("Is it worse to:", "Have your 'head in the clouds'", "Be 'in a rut'"),
     ("Are you more interested in:", "What is actual", "What is possible"),
-    ("Writers should:", "'Say what they mean and mean what they say'", "Express things more by use of analogy"),
-    ("Are visionaries:", "Somewhat annoying", "Rather fascinating"),
-    ("Children often do not:", "Make themselves useful enough", "Exercise their fantasy enough"),
     ("Are you more likely to:", "See how others are useful", "See how others see"),
-    ("Are you more interested in:", "Production and distribution", "Design and research"),
     ("Do you feel:", "More practical than ingenious", "More ingenious than practical"),
-    ("Are you drawn more to:", "Fundamentals", "Overtones"),
-    ("Is it harder for you to:", "Identify with others", "Utilize others")]
+    ("Is it harder for you to:", "Identify with others", "Use others")]
+
 
 questions4 = [("Are you more impressed by:", "Principles", "Emotions"),
-    ("In judging others are you more swayed by:", "Laws than circumstances", "Circumstances than laws"),
     ("Which appeals to you more:", "Consistency of thought", "Harmonious human relationships"),
     ("Are you inclined to be more:", "Cool headed", "Warm hearted"),
-    ("In making decisions do you feel more comfortable with:", "Standards", "Feelings"),
-    ("Which is more satisfying:", "To discuss an issue throughly", "To arrive at agreement on an issue"),
-    ("Which is more of a compliment:", "There is a very logical person.", "There is a very sentimental person."),
     ("Are you typically more a person of:", "Clear reason", "Strong feeling"),
-    ("Which seems the greater error:", "To be too passionate", "To be too objective"),
     ("Which do you wish more for yourself:", "Clarity of reason", "Strength of compassion")]
 
-questions5 = [("Are more drawn toward the:", "Convincing", "Touching"),
-    ("In first approaching others are you more:", "Objective and detached", "Personal and engaging"),
-    ("Are you more comfortable in making:", "Logical judgments", "V alue judgments"),
+
+questions5 =  [("Are you more drawn towards the:", "Convincing", "Touching"),
     ("Is it worse to be:", "Unjust", "Merciless"),
-    ("Are you more:", "Firm than gentle", "Gentle than firm"),
     ("Which rules you more:", "Your head", "Your heart"),
     ("Do you value in yourself more that you are:", "Unwavering", "Devoted"),
-    ("Are you inclined more to be:", "Fair-minded", "Sympathetic"),
-    ("Do you see yourself as basically:", "Hard-headed", "Soft-hearted"),
-    ("Which is the greater fault:", "Being indiscriminate", "Being critical")]
+    ("Do you see yourself as basically:", "Hard-headed", "Soft-hearted")]
 
-questions6 = [("Do you prefer to work:", "To deadlines", "Just whenever"),
-    ("Are you usually more:", "Punctual", "Leisurely"),
-    ("Do you usually:", "Settle things", "Keep options open"),
+
+questions6 = [("Do you usually:", "Settle things", "Keep options open"),
     ("Should one usually let events occur:", "By careful selection and choice", "Randomly and by chance"),
     ("Which is more admirable:", "The ability to organize and be methodical", "The ability to adapt and make do"),
-    ("Are you more comfortable with work:", "Contracted", "Done on a casual basis"),
-    ("Do you more often prefer the:", "Final and unalterable statement", "Tentative and preliminary statement"),
     ("Is it preferable mostly to:", "Make sure things are arranged", "Just let things happen"),
-    ("Which situation appeals to you more:", "The structured and scheduled", "The unstructured and unscheduled"),
     ("Do you prefer the:", "Planned events", "Unplanned event")]
 
-questions7 = [("Do you tend to choose:", "Rather carefully", "Somewhat impulsively"),
+
+questions7 =  [("Do you tend to choose:", "Rather carefully", "Somewhat impulsively"),
     ("Does it bother you more having things:", "Incomplete", "Completed"),
     ("Would you say you are more:", "Serious and determined", "Easy-going"),
-    ("Do you feel better about:", "Having purchased", "Having the option to buy"),
-    ("Do you put more value on the:", "Definite", "Variable"),
-    ("Do you tend to look for:", "The orderly", "Whatever turns up"),
     ("Are you more comfortable:", "After a decision", "Before a decision"),
-    ("Is it your way more to:", "Get things settled", "Put off settlement"),
-    ("Do you prefer to?:", "Set things up perfectly", "Allow things to come together"),
     ("Do you tend to be more:", "Deliberate than spontaneous", "Spontaneous than deliberate")]
-
-
-
-
 
 def questions_print(question_list, key_counter, pc_a, pc_b, ca, cb):
     ans_counter = 0
@@ -154,18 +122,19 @@ def main():
     st.caption("Please choose A or B that best describes you")
     st.caption("The questions will disappear after you have answered them")
     st.markdown('#')
+
     my_bar = st.progress(0)
     pc_code = questions_print(questions1, key_c, 'E', 'I', 0, 0)
     if pc_code != None:
         personality_code += pc_code[0]
         key_c += pc_code[1]
         #st.text(personality_code)
-        st.text(key_c)
+        #st.text(key_c)
         my_bar.progress(15)
         pc_code = questions_print(questions2, key_c, 'S', 'N', 0, 0)
         if pc_code != None:
             #personality_code += pc_code[0]
-            key_c += pc_code[1]
+            #key_c += pc_code[1]
             #st.text(personality_code)
             st.text(key_c)
             my_bar.progress(30)
@@ -174,14 +143,14 @@ def main():
                 personality_code += pc_code[0]
                 key_c += pc_code[1]
                 #st.text(personality_code)
-                st.text(key_c)
+                #st.text(key_c)
                 my_bar.progress(45)
                 pc_code = questions_print(questions4, key_c, 'T', 'F', 0, 0)
                 if pc_code != None:
                     #personality_code += pc_code[0]
                     key_c += pc_code[1]
                     #st.text(personality_code)
-                    st.text(key_c)
+                    #st.text(key_c)
                     my_bar.progress(60)
                     pc_code = questions_print(questions5, key_c, 'T', 'F', pc_code[2], pc_code[3])
                     if pc_code != None:
@@ -189,20 +158,20 @@ def main():
                         key_c += pc_code[1]
                         #st.text(personality_code)
                         my_bar.progress(75)
-                        st.text(key_c)
+                        #st.text(key_c)
                         pc_code = questions_print(questions6, key_c, 'J', 'P', 0, 0)
                         if pc_code != None:
                             personality_code += pc_code[0]
                             key_c += pc_code[1]
                             #st.text(personality_code)
-                            st.text(key_c)
+                            #st.text(key_c)
                             my_bar.progress(90)
                             pc_code = questions_print(questions7, key_c, 'J', 'P', pc_code[2], pc_code[3])
                             if pc_code != None:
                                 personality_code += pc_code[0]
                                 key_c += pc_code[1]
                                 st.text(personality_code)
-                                st.text("Total number of questions answered"  + key_c)
+                                #st.text("Total number of questions answered"  + key_c)
                                 my_bar.progress(100)
                                 time.sleep(2)
                                 placeholder6 =st.empty()
@@ -213,18 +182,55 @@ def main():
                                 test_complete = True
         if personality_code != "" and test_complete == True:
             st.header("Your MBTI is " + personality_code)
+            #Test
+            #url = "https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py"
+            #st.write("check out this [link](%s)" % url)
+
             if personality_code == "INFP":
                 st.subheader(" The Mediator ")
                 st.text("You can consider the following hobbie:")
                 st.text("Poetry, creative writing, music, photography, theater, visual art")
+                st.markdown('#')
+                st.text("The following are some links you can check out")
+                poetry_url = "https://tract.app/search?q=poetry"
+                st.write("Check out this [Poetry](%s)" % poetry_url)
+                cw_url = "https://tract.app/search?q=Creative%20writing"
+                st.write("Check out this [Poetry](%s)" % cw_url)
+                mu_url = "https://tract.app/search?q=music"
+                st.write("Check out this [Poetry](%s)" % mu_url)
+                ph_url = "https://tract.app/search?q=photography"
+                st.write("Check out this [Poetry](%s)" % ph_url)
+                th_url = "https://tract.app/search?q=theater"
+                st.write("Check out this [Poetry](%s)" % th_url)
+                va_url = "https://tract.app/search?q=Visual%20Art"
+                st.write("Check out this [Poetry](%s)" % va_url)
+
             elif personality_code == "INFJ":
                 st.subheader("The Advocate")
                 st.text("You can consider the following hobbie:")
-                st.text("Writing, art appreciation, reading, playing/listening to music, cooking/baking, crafting")
+                st.text("Writing, art appreciation, reading, listening to music, cooking/baking, crafting")
+                st.markdown('#')
+                st.text("The following are some links you can check out")
+                wr_url = "https://tract.app/search?q=writing"
+                st.write("Check out this [Poetry](%s)" % wr_url)
+                ap_url = "https://tract.app/search?q=Art%20Appreciation"
+                st.write("Check out this [Poetry](%s)" % ap_url)
+                rd_url = "https://tract.app/search?q=reading"
+                st.write("Check out this [Poetry](%s)" % rd_url)
+                mu_url = "https://tract.app/search?q=music"
+                st.write("Check out this [Poetry](%s)" % mu_url)
+                ck_url = "https://tract.app/search?q=cooking"
+                st.write("Check out this [Poetry](%s)" % ck_url)
+                cr_url = "https://tract.app/search?q=crafting"
+                st.write("Check out this [Poetry](%s)" % cr_url)
+
             elif personality_code == "ENFP":
                 st.subheader("The Campaigner")
                 st.text("You can consider the following hobbie:")
                 st.text("Writing, creating art, playing instruments, listening to music, theater, reading fiction")
+                st.markdown('#')
+                st.text("The following are some links you can check out")
+                
             elif personality_code == "ENFJ":
                 st.subheader("The Protagonist")
                 st.text("You can consider the following hobbie:")
