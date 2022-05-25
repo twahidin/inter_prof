@@ -195,15 +195,15 @@ def main():
                 poetry_url = "https://tract.app/search?q=poetry"
                 st.write("Check out this [Poetry](%s)" % poetry_url)
                 cw_url = "https://tract.app/search?q=Creative%20writing"
-                st.write("Check out this [Poetry](%s)" % cw_url)
+                st.write("Check out this [Creative Writing](%s)" % cw_url)
                 mu_url = "https://tract.app/search?q=music"
-                st.write("Check out this [Poetry](%s)" % mu_url)
+                st.write("Check out this [Music ](%s)" % mu_url)
                 ph_url = "https://tract.app/search?q=photography"
-                st.write("Check out this [Poetry](%s)" % ph_url)
-                th_url = "https://tract.app/search?q=theater"
-                st.write("Check out this [Poetry](%s)" % th_url)
+                st.write("Check out this [Photography](%s)" % ph_url)
+                th_url = "https://tract.app/search?q=theatre"
+                st.write("Check out this [Theatre](%s)" % th_url)
                 va_url = "https://tract.app/search?q=Visual%20Art"
-                st.write("Check out this [Poetry](%s)" % va_url)
+                st.write("Check out this [Visual Art](%s)" % va_url)
 
             elif personality_code == "INFJ":
                 st.subheader("The Advocate")
@@ -212,17 +212,17 @@ def main():
                 st.markdown('#')
                 st.text("The following are some links you can check out")
                 wr_url = "https://tract.app/search?q=writing"
-                st.write("Check out this [Poetry](%s)" % wr_url)
+                st.write("Check out this [Writing](%s)" % wr_url)
                 ap_url = "https://tract.app/search?q=Art%20Appreciation"
-                st.write("Check out this [Poetry](%s)" % ap_url)
+                st.write("Check out this [Art Appreciation](%s)" % ap_url)
                 rd_url = "https://tract.app/search?q=reading"
-                st.write("Check out this [Poetry](%s)" % rd_url)
+                st.write("Check out this [Reading](%s)" % rd_url)
                 mu_url = "https://tract.app/search?q=music"
-                st.write("Check out this [Poetry](%s)" % mu_url)
+                st.write("Check out this [Music](%s)" % mu_url)
                 ck_url = "https://tract.app/search?q=cooking"
-                st.write("Check out this [Poetry](%s)" % ck_url)
+                st.write("Check out this [Cooking](%s)" % ck_url)
                 cr_url = "https://tract.app/search?q=crafting"
-                st.write("Check out this [Poetry](%s)" % cr_url)
+                st.write("Check out this [Crafting](%s)" % cr_url)
 
             elif personality_code == "ENFP":
                 st.subheader("The Campaigner")
@@ -230,11 +230,34 @@ def main():
                 st.text("Writing, creating art, playing instruments, listening to music, theater, reading fiction")
                 st.markdown('#')
                 st.text("The following are some links you can check out")
-                
+                wr_url = "https://tract.app/search?q=writing"
+                st.write("Check out this [Writing](%s)" % wr_url)
+                ca_url = "https://tract.app/search?q=Creating%20Art"
+                st.write("Check out this [Creating Art](%s)" % ca_url)
+                mu_url = "https://tract.app/search?q=music"
+                st.write("Check out this [Music](%s)" % mu_url)
+                th_url = "https://tract.app/search?q=theatre"
+                st.write("Check out this [Theatre](%s)" % th_url)
+                fc_url = "https://tract.app/search?q=fiction"
+                st.write("Check out this [Fiction](%s)" % fc_url)
+
             elif personality_code == "ENFJ":
                 st.subheader("The Protagonist")
                 st.text("You can consider the following hobbie:")
                 st.text("Reading, storytelling, cooking, writing, music, organizing events") 
+
+                wr_url = "https://tract.app/search?q=writing"
+                st.write("Check out this [Writing](%s)" % wr_url)
+                ck_url = "https://tract.app/search?q=cooking"
+                st.write("Check out this [Cooking](%s)" % ck_url)
+                st_url = "https://tract.app/search?q=storytelling"
+                st.write("Check out this [Storytelling](%s)" % st_url)
+                mu_url = "https://tract.app/search?q=music"
+                st.write("Check out this [Music](%s)" % mu_url)
+
+
+
+
             elif personality_code == "INTJ":
                 st.subheader("The Architect")
                 st.text("You can consider the following hobbie:")
