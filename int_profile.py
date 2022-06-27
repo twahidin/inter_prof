@@ -8,15 +8,15 @@ import time
 
 now = datetime.now()
 
-questions1 = [("In your social groups do you:", "Keep abreast of all happenings", "Be behind on the latest news"),
-    ("With new company do you:", "Start conversations", "Wait to be approached")]
+questions1 = [("Among your friends:", "I want to know the latest happenings", "I don't need to know the latest happenings"),
+    ("Among strangers, do you:", "Start conversations", "Wait to be approached")]
 
 
-questions2 = [("Are you more:", "Realistic", "Speculative"),
+questions2 = [("Are you more:", "Realistic", "Risk taking"),
     ("In doing ordinary things are you more likely to:", "Do it the usual way", "Do it your own way")]
 
 #Not in the MBTI questions list
-questions3 =  [("Is it worse to:", "Have your 'head in the clouds'", "Be 'in a rut'"),
+questions3 =  [("Is it worse to:", "Impractical and dreaming'", "Doing the same boring things"),
     ("Are you more interested in:", "What is actual", "What is possible")]
 
 
@@ -155,22 +155,23 @@ def main():
                                 my_bar.progress(100)
                                 #time.sleep(2)
                                 placeholder6 =st.empty()
-                                placeholder6.text("Congratulations! You have completed yoru MBTI test!")
+                                placeholder6.text("Congratulations! You have completed your personality test!")
                                 st.balloons()
                                 time.sleep(2)
                                 placeholder6.empty()
                                 test_complete = True
         if personality_code != "" and test_complete == True:
-            st.header("Your MBTI is " + personality_code)
+            st.header("Results of the Personality and Interests test")
             list_url = []
             #Test
             #url = "https://share.streamlit.io/mesmith027/streamlit_webapps/main/MC_pi/streamlit_app.py"
             #st.write("check out this [link](%s)" % url)
 
             if personality_code == "INFP":
-                st.subheader(" The Mediator ")
-                st.write("You can consider the following hobbies:")
-                st.write("Poetry, creative writing, music, photography, theater, visual art")
+                #st.subheader(" The Mediator ")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Poetry, creative writing, music, photography, theater, visual art")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -198,14 +199,19 @@ def main():
                 st.write("Check out this [Visual Art](%s)" % va_url)
                 list_url.append("Visual Arts")
                 list_url.append(va_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/infp-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
                 #PDF report
                 profile_text = """Your MBTI Profile is INFF, also known as The Mediator"""
                 hobbies_text = """You can consider the following hobbies: Poetry, creative writing, music, photography, theater, visual art"""
 
             elif personality_code == "INFJ":
-                st.subheader("The Advocate")
-                st.write("You can consider the following hobbies:")
-                st.write("Writing, art appreciation, reading, listening to music, cooking/baking, crafting")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Writing, art appreciation, reading, listening to music, cooking/baking, crafting")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -233,6 +239,11 @@ def main():
                 st.write("Check out this [Crafting](%s)" % cr_url)
                 list_url.append("Crafting")
                 list_url.append(cr_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/infj-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is INFJ, also known as The Advocate"""
@@ -240,9 +251,9 @@ def main():
 
 
             elif personality_code == "ENFP":
-                st.subheader("The Campaigner")
-                st.write("You can consider the following hobbies:")
-                st.write("Writing, creating art, playing instruments, music, theater, reading fiction")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Writing, creating art, playing instruments, music, theater, reading fiction")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -266,15 +277,20 @@ def main():
                 st.write("Check out this [Fiction](%s)" % fc_url)
                 list_url.append("Fiction")
                 list_url.append(fc_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/enfp-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ENFP, also known as The Campaigner"""
                 hobbies_text = """You can consider the following hobbies: Writing, creating art, playing instruments, music, theater, reading fiction"""
 
             elif personality_code == "ENFJ":
-                st.subheader("The Protagonist")
-                st.write("You can consider the following hobbies:")
-                st.write("Reading, storytelling, cooking, writing, music, organizing events")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Reading, storytelling, cooking, writing, music, organizing events")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -300,15 +316,22 @@ def main():
                 list_url.append(rd_url)
                 oe_url = "https://tract.app/search?q=leader"
                 st.write("Check out this [Leadership](%s)" % oe_url)
+                list_url.append("Reading")
+                list_url.append(oe_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/enfj-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ENFJ, also known as The Protagonist"""
                 hobbies_text = """You can consider the following hobbies: Reading, storytelling, cooking, writing, music, organizing events"""
 
             elif personality_code == "INTJ":
-                st.subheader("The Architect")
-                st.write("You can consider the following hobbies:")
-                st.write("Reading, computer and video games, independent sports (like swimming, skiing)")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Reading, computer and video games, independent sports (like swimming, skiing)")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -324,16 +347,20 @@ def main():
                 st.write("Check out this [Sports](%s)" % sp_url)
                 list_url.append("Sports")
                 list_url.append(sp_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/intj-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is INTJ, also known as The Architect"""
                 hobbies_text = """You can consider the following hobbies: Reading, computer and strategy games, independent sports (like swimming, skiing)"""
 
             elif personality_code == "INTP":
-                st.subheader("The Logician")
-                st.write("You can consider the following hobbies:")
-                st.write("Reading, chess, strategy games, writing, computer work (coding), hiking")
-                st.write("backpacking, meditation")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Reading, chess, strategy games, writing, computer work (coding), hiking, backpacking, meditation")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -341,8 +368,8 @@ def main():
                 st.write("Check out this [Reading](%s)" % rd_url)
                 list_url.append("Reading")
                 list_url.append(rd_url)
-                st.write("Check out this [Chess(%s)" % ch_url)
                 ch_url = "https://tract.app/search?q=chess"
+                st.write("Check out this [Chess(%s)" % ch_url)
                 list_url.append("Chess")
                 list_url.append(ch_url)
                 sg_url = "https://tract.app/search?q=strategy%20games"
@@ -361,15 +388,20 @@ def main():
                 st.write("Check out this [Hiking](%s)" % hk_url)
                 list_url.append("Hiking")
                 list_url.append(hk_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/intp-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
                 
                 #PDF report
                 profile_text = """Your MBTI Profile is INTP, also known as The Logician"""
                 hobbies_text = """You can consider the following hobbies: Reading, chess, strategy games, writing, computer work (coding), hiking"""
 
             elif personality_code == "ENTJ":
-                st.subheader("The Commander")
-                st.write("You can consider the following hobbies:")
-                st.write("Activities that would further their careers or where they can be in charge")
+                st.markdown('#')
+                st.subheader("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Activities that would further their careers or where they can be in charge")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -385,15 +417,20 @@ def main():
                 st.write("Check out this [Leadership](%s)" % ld_url)
                 list_url.append("Leadership")
                 list_url.append(ld_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/entj-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ENTJ, also known as The Commander"""
                 hobbies_text = """You can consider the following hobbies: Activities that would further their careers or where they can be in charge"""
 
             elif personality_code == "ENTP":
-                st.subheader("The Debator")
-                st.write("You can consider the following hobbies:")
-                st.write("Writing, art appreciation, sports, computer and video games, travel")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Writing, art appreciation, sports, computer and video games, travel")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -417,15 +454,20 @@ def main():
                 st.write("Check out this [Travel](%s)" % tr_url)
                 list_url.append("Travel")
                 list_url.append(tr_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/entp-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ENTP, also known as The Debator"""
                 hobbies_text = """You can consider the following hobbies: Writing, art appreciation, sports, computer and video games, travel"""
 
             elif personality_code == "ISFJ":
-                st.subheader("The Defender")
-                st.write("You can consider the following hobbies:")
-                st.write("Cooking, gardening, painting, crafts, nature walks, watching movies")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Cooking, gardening, painting, crafts, nature walks, watching movies")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -449,15 +491,20 @@ def main():
                 st.write("Check out this [Movies](%s)" % mv_url)
                 list_url.append("Movies")
                 list_url.append(mv_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/isfj-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ISFJ, also known as The Defender"""
                 hobbies_text = """You can consider the following hobbies: Cooking, gardening, painting, crafts, nature walks, watching movies"""
 
             elif personality_code == "ISFP":
-                st.subheader("The Adventurer")
-                st.write("You can consider the following hobbies:")
-                st.write("Athletics, dance, craft projects (DIY)")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Athletics, dance, craft projects (DIY)")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -472,7 +519,12 @@ def main():
                 da_url = "https://tract.app/search?q=dance"
                 st.write("Check out this [Dance](%s)" % da_url)
                 list_url.append("Dance")
-                list_url.append(da_url)   
+                list_url.append(da_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/isfp-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ISFP, also known as The Adventurer"""
@@ -480,9 +532,9 @@ def main():
 
 
             elif personality_code == "ESFJ":
-                st.subheader("The Consul")
-                st.write("You can consider the following hobbies:")
-                st.write("Cooking, volunteering, gardening, dancing, knitting, crafts")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Cooking, volunteering, gardening, dancing, knitting, crafts")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -510,6 +562,11 @@ def main():
                 st.write("Check out this [Volunteering](%s)" % vn_url)
                 list_url.append("Volunteering")
                 list_url.append(vn_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/esfj-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ESFJ, also known as The Consul"""
@@ -517,9 +574,9 @@ def main():
 
 
             elif personality_code == "ESFP":
-                st.subheader("The Entertainer")
-                st.write("You can consider the following hobbies:")
-                st.write("Team sports, home improvement projects, cooking, games, dance")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Team sports, home improvement projects, cooking, games, dance")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -543,6 +600,11 @@ def main():
                 st.write("Check out this [Games](%s)" % ga_url)
                 list_url.append("Games")
                 list_url.append(ga_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/esfp-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ESFP, also known as The Entertainer"""
@@ -550,9 +612,9 @@ def main():
 
 
             elif personality_code == "ISTJ":
-                st.subheader("The Logistician")
-                st.write("You can consider the following hobbies:")
-                st.write("Chess, mind puzzles, computer games, physical fitness, solitary sports (golf)")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Chess, mind puzzles, computer games, physical fitness, solitary sports (golf)")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -576,6 +638,11 @@ def main():
                 st.write("Check out this [Golf](%s)" % gf_url)
                 list_url.append("Golf")
                 list_url.append(gf_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/istj-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ISTJ, also known as The Logistician"""
@@ -583,9 +650,9 @@ def main():
 
 
             elif personality_code == "ISTP":
-                st.subheader("The Virtuso")
-                st.write("You can consider the following hobbies:")
-                st.write("Magic, comedy, archery, scuba diving, aviation, skydiving and sports ")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Magic, comedy, archery, scuba diving, aviation, skydiving and sports ")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -613,15 +680,20 @@ def main():
                 st.write("Check out this [Sports](%s)" % sp_url)
                 list_url.append("Sports")
                 list_url.append(sp_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/istp-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ISTP, also known as The Virtuso"""
                 hobbies_text = """You can consider the following hobbies: Magic, comedy, archery, scuba diving, aviation, skydiving and sports"""
 
             elif personality_code == "ESTJ":
-                st.subheader("The Executive")
-                st.write("You can consider the following hobbies:")
-                st.write("Building, repairing, gardening, volunteering, playing sports")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Building, repairing, gardening, volunteering, playing sports")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -645,15 +717,20 @@ def main():
                 st.write("Check out this [Sports](%s)" % sp_url)
                 list_url.append("Sports")
                 list_url.append(sp_url)
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/estj-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ESTJ, also known as The Executive"""
                 hobbies_text = """You can consider the following hobbies: Building, repairing, gardening, volunteering, playing sports"""
 
             elif personality_code == "ESTP":
-                st.subheader("The Entrepreneur")
-                st.write("You can consider the following hobbies:")
-                st.write("Sports, any athletics, racing or flying")
+                st.markdown('#')
+                st.write("Based on the survey, you can consider the following hobbies:")
+                st.subheader("Sports, any athletics, racing or flying")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -673,7 +750,11 @@ def main():
                 st.write("Check out this [Flying](%s)" % fl_url)
                 list_url.append("Flying")
                 list_url.append(fl_url)
-
+                st.markdown('#')
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                mbti_url = "https://www.16personalities.com/estp-personality"
+                st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
+                st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
                 #PDF report
                 profile_text = "Your MBTI Profile is ESTP, also known as The Entrepreneur"
                 hobbies_text = "You can consider the following hobbies: Sports, any athletics, racing or flying"
