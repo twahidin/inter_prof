@@ -240,7 +240,7 @@ def main():
                 list_url.append("Crafting")
                 list_url.append(cr_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Advocate")
                 mbti_url = "https://www.16personalities.com/infj-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -278,12 +278,12 @@ def main():
                 list_url.append("Fiction")
                 list_url.append(fc_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Campaigner")
                 mbti_url = "https://www.16personalities.com/enfp-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
 
-                #PDF report
+                #PDF report #
                 profile_text = """Your MBTI Profile is ENFP, also known as The Campaigner"""
                 hobbies_text = """You can consider the following hobbies: Writing, creating art, playing instruments, music, theater, reading fiction"""
 
@@ -319,7 +319,7 @@ def main():
                 list_url.append("Reading")
                 list_url.append(oe_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Protagonist")
                 mbti_url = "https://www.16personalities.com/enfj-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -348,7 +348,7 @@ def main():
                 list_url.append("Sports")
                 list_url.append(sp_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Architect")
                 mbti_url = "https://www.16personalities.com/intj-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -389,7 +389,7 @@ def main():
                 list_url.append("Hiking")
                 list_url.append(hk_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Logician")
                 mbti_url = "https://www.16personalities.com/intp-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -418,7 +418,7 @@ def main():
                 list_url.append("Leadership")
                 list_url.append(ld_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Commander")
                 mbti_url = "https://www.16personalities.com/entj-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -455,7 +455,7 @@ def main():
                 list_url.append("Travel")
                 list_url.append(tr_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Debator")
                 mbti_url = "https://www.16personalities.com/entp-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -492,7 +492,7 @@ def main():
                 list_url.append("Movies")
                 list_url.append(mv_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Defender")
                 mbti_url = "https://www.16personalities.com/isfj-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -521,7 +521,7 @@ def main():
                 list_url.append("Dance")
                 list_url.append(da_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Adventurer")
                 mbti_url = "https://www.16personalities.com/isfp-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -563,7 +563,7 @@ def main():
                 list_url.append("Volunteering")
                 list_url.append(vn_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Consul")
                 mbti_url = "https://www.16personalities.com/esfj-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -601,7 +601,7 @@ def main():
                 list_url.append("Games")
                 list_url.append(ga_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Entertainer")
                 mbti_url = "https://www.16personalities.com/esfp-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -639,7 +639,7 @@ def main():
                 list_url.append("Golf")
                 list_url.append(gf_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Logistician")
                 mbti_url = "https://www.16personalities.com/istj-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -681,7 +681,7 @@ def main():
                 list_url.append("Sports")
                 list_url.append(sp_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Virtuso")
                 mbti_url = "https://www.16personalities.com/istp-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -718,7 +718,7 @@ def main():
                 list_url.append("Sports")
                 list_url.append(sp_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Executive")
                 mbti_url = "https://www.16personalities.com/estj-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
@@ -751,7 +751,7 @@ def main():
                 list_url.append("Flying")
                 list_url.append(fl_url)
                 st.markdown('#')
-                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Mediator")
+                st.write("Your MBTI profile is assesed as " + personality_code + ", also known as The Entrepreneur")
                 mbti_url = "https://www.16personalities.com/estp-personality"
                 st.write("If you are interested to know more about MBTI profile, you can access this [link](%s)" % mbti_url)
                 st.write("Do note that the test is not comprehensive and you should consider taking a more thorough test to find get a more accurate MBTI assessment")
