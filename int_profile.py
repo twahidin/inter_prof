@@ -360,7 +360,7 @@ def main():
             elif personality_code == "INTP":
                 st.markdown('#')
                 st.write("Based on the survey, you can consider the following hobbies:")
-                st.subheader("Reading, chess, strategy games, writing, computer work (coding), hiking, backpacking, meditation")
+                st.subheader("Reading, chess, strategy games, writing, computer work (coding), outdoors, backpacking, meditation")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -372,7 +372,7 @@ def main():
                 st.write("Check out this [Chess(%s)" % ch_url)
                 list_url.append("Chess")
                 list_url.append(ch_url)
-                sg_url = "https://tract.app/search?q=strategy%20games"
+                sg_url = "https://tract.app/search?q=strategies"
                 st.write("Check out this [Strategy Games](%s)" % sg_url)
                 list_url.append("Strategy Games")
                 list_url.append(sg_url)
@@ -384,8 +384,8 @@ def main():
                 st.write("Check out this [Coding](%s)" % cd_url)
                 list_url.append("Coding")
                 list_url.append(cd_url)
-                hk_url = "https://tract.app/search?q=hiking"
-                st.write("Check out this [Hiking](%s)" % hk_url)
+                hk_url = "https://tract.app/search?q=outdoors"
+                st.write("Check out this [Outdoors](%s)" % hk_url)
                 list_url.append("Hiking")
                 list_url.append(hk_url)
                 st.markdown('#')
@@ -430,7 +430,7 @@ def main():
             elif personality_code == "ENTP":
                 st.markdown('#')
                 st.write("Based on the survey, you can consider the following hobbies:")
-                st.subheader("Writing, art appreciation, sports, computer and video games, travel")
+                st.subheader("Writing, art appreciation, sports, computer and video games, world culture")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -450,8 +450,8 @@ def main():
                 st.write("Check out this [Computer Games](%s)" % vg_url)
                 list_url.append("Computer Games")
                 list_url.append(vg_url)
-                tr_url = "https://tract.app/search?q=travel"
-                st.write("Check out this [Travel](%s)" % tr_url)
+                tr_url = "https://tract.app/search?q=world%20culture"
+                st.write("Check out this [World Culture](%s)" % tr_url)
                 list_url.append("Travel")
                 list_url.append(tr_url)
                 st.markdown('#')
@@ -592,9 +592,9 @@ def main():
                 st.write("Check out this [Sports](%s)" % sp_url)
                 list_url.append("Sports")
                 list_url.append(sp_url)
-                hi_url = "https://tract.app/search?q=home%20improvement"
-                st.write("Check out this [Home improvement](%s)" % hi_url)
-                list_url.append("Home Improvement")
+                hi_url = "https://tract.app/search?q=DIY"
+                st.write("Check out this [craft projects (DIY)](%s)" % hi_url)
+                list_url.append("DIY")
                 list_url.append(hi_url)
                 ga_url = "https://tract.app/search?q=games"
                 st.write("Check out this [Games](%s)" % ga_url)
@@ -652,7 +652,7 @@ def main():
             elif personality_code == "ISTP":
                 st.markdown('#')
                 st.write("Based on the survey, you can consider the following hobbies:")
-                st.subheader("Magic, comedy, archery, scuba diving, aviation, skydiving and sports ")
+                st.subheader("Magic, comedy, archery, scuba diving, aeroplanes, skydiving and sports ")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -668,8 +668,8 @@ def main():
                 st.write("Check out this [Archery](%s)" % ay_url)
                 list_url.append("Archery")
                 list_url.append(ay_url)
-                av_url = "https://tract.app/search?q=aviation"
-                st.write("Check out this [Aviation](%s)" % av_url)
+                av_url = "https://tract.app/search?q=aeroplanes"
+                st.write("Check out this [Aeroplanes](%s)" % av_url)
                 list_url.append("Aviation")
                 list_url.append(av_url)
                 sk_url = "https://tract.app/search?q=skydiving"
@@ -693,7 +693,7 @@ def main():
             elif personality_code == "ESTJ":
                 st.markdown('#')
                 st.write("Based on the survey, you can consider the following hobbies:")
-                st.subheader("Building, repairing, gardening, volunteering, playing sports")
+                st.subheader("Building, DIY, gardening, volunteering, playing sports")
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
@@ -701,9 +701,9 @@ def main():
                 st.write("Check out this [Building](%s)" % bd_url)
                 list_url.append("Building")
                 list_url.append(bd_url)
-                rp_url = "https://tract.app/search?q=repairing"
-                st.write("Check out this [Repairing](%s)" % rp_url)
-                list_url.append("Repairing")
+                rp_url = "https://tract.app/search?q=DIY"
+                st.write("Check out this [DIY](%s)" % rp_url)
+                list_url.append("DIY")
                 list_url.append(rp_url)
                 gd_url = "https://tract.app/search?q=gardening"
                 st.write("Check out this [Gardening](%s)" % gd_url)
@@ -725,7 +725,7 @@ def main():
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ESTJ, also known as The Executive"""
-                hobbies_text = """You can consider the following hobbies: Building, repairing, gardening, volunteering, playing sports"""
+                hobbies_text = """You can consider the following hobbies: Building, DIY, gardening, volunteering, playing sports"""
 
             elif personality_code == "ESTP":
                 st.markdown('#')
