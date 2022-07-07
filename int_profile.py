@@ -231,7 +231,7 @@ def main():
                 st.write("Check out this [Music](%s)" % mu_url)
                 list_url.append("Music")
                 list_url.append(mu_url)
-                ck_url = "https://tract.app/search?q=cooking"
+                ck_url = "https://tract.app/search?q=recipe"
                 st.write("Check out this [Cooking](%s)" % ck_url)
                 list_url.append("Cooking")
                 list_url.append(ck_url)
@@ -298,7 +298,7 @@ def main():
                 st.write("Check out this [Writing](%s)" % wr_url)
                 list_url.append("Writing")
                 list_url.append(wr_url)
-                ck_url = "https://tract.app/search?q=cooking"
+                ck_url = "https://tract.app/search?q=recipe"
                 st.write("Check out this [Cooking](%s)" % ck_url)
                 list_url.append("Cooking")
                 list_url.append(ck_url)
@@ -471,7 +471,7 @@ def main():
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
-                ck_url = "https://tract.app/search?q=cooking"
+                ck_url = "https://tract.app/search?q=recipe"
                 st.write("Check out this [Cooking](%s)" % ck_url)
                 list_url.append("Cooking")
                 list_url.append(ck_url)
@@ -538,7 +538,7 @@ def main():
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
-                ck_url = "https://tract.app/search?q=cooking"
+                ck_url = "https://tract.app/search?q=recipe"
                 st.write("Check out this [Cooking](%s)" % ck_url)
                 list_url.append("Cooking")
                 list_url.append(ck_url)
@@ -558,7 +558,7 @@ def main():
                 st.write("Check out this [Knitting](%s)" % kn_url)
                 list_url.append("Knitting")
                 list_url.append(kn_url)
-                vn_url = "https://tract.app/search?q=volunteering"
+                vn_url = "https://tract.app/search?q=charity"
                 st.write("Check out this [Volunteering](%s)" % vn_url)
                 list_url.append("Volunteering")
                 list_url.append(vn_url)
@@ -570,7 +570,7 @@ def main():
 
                 #PDF report
                 profile_text = """Your MBTI Profile is ESFJ, also known as The Consul"""
-                hobbies_text = """You can consider the following hobbies: Athletics, dance, craft projects (DIY)"""
+                hobbies_text = """You can consider the following hobbies: Cooking, athletics, dance, craft projects (DIY)"""
 
 
             elif personality_code == "ESFP":
@@ -580,7 +580,7 @@ def main():
                 st.markdown('#')
                 st.write("The following are some links you can check out")
                 st.write("Please login to Tract.app before clicking the links")
-                ck_url = "https://tract.app/search?q=cooking"
+                ck_url = "https://tract.app/search?q=recipe"
                 st.write("Check out this [Cooking](%s)" % ck_url)
                 list_url.append("Cooking")
                 list_url.append(ck_url)
@@ -709,7 +709,7 @@ def main():
                 st.write("Check out this [Gardening](%s)" % gd_url)
                 list_url.append("Gardening")
                 list_url.append(gd_url)
-                vn_url = "https://tract.app/search?q=volunteering"
+                vn_url = "https://tract.app/search?q=charity"
                 st.write("Check out this [Volunteering](%s)" % vn_url)
                 list_url.append("Volunteering")
                 list_url.append(vn_url)
@@ -760,14 +760,14 @@ def main():
                 hobbies_text = "You can consider the following hobbies: Sports, any athletics, racing or flying"
 
             st.markdown("#")
-            st.write("These hobbies are just suggestions")    
-            st.write("Do your own research into things you may like and just see where life takes you.")
-            st.write("There are so many different types of hobbies - don't limit yourself to just these.")
+            st.write("These hobbies are just suggestions.")    
+            st.write("Should Tract.app does not match or return any suitable interest resources,")
+            st.write("please explore other websites or video sharing sites to help pursue your interests")
             st.markdown("#") 
             title_text = "MBTI and Interest Profile Report"
             link_intro_text = "The following are some links you can check out: (Login to Tract.app before clicking the links)"
 
-            export_as_pdf = st.button("Export Report")
+            export_as_pdf = st.button("Export Report")     
 
             def create_download_link(val, filename):
                 b64 = base64.b64encode(val)  # val looks like b'...'
