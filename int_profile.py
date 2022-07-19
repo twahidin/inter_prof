@@ -369,7 +369,7 @@ def main():
                 list_url.append("Reading")
                 list_url.append(rd_url)
                 ch_url = "https://tract.app/search?q=chess"
-                st.write("Check out this [Chess(%s)" % ch_url)
+                st.write("Check out this [Chess](%s)" % ch_url)
                 list_url.append("Chess")
                 list_url.append(ch_url)
                 sg_url = "https://tract.app/search?q=strategies"
